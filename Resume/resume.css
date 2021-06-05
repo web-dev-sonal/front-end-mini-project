@@ -1,0 +1,436 @@
+/* body header*/
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+
+}
+#body_head {
+    height: 70vh;
+     width: 100%;
+    
+     background-image: url(https://images.unsplash.com/photo-1510511498717-4326639c999c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     opacity: 0.8;
+     margin: 0;
+ 
+ }
+
+ .horizontal_list {
+     width: 100%;
+    padding: 5px;
+   
+    list-style: none;
+    
+}
+
+.text_center {
+    text-align: center;
+}
+
+
+
+.horizontal_list li {
+    display: inline-block;
+    margin: 0 2%;
+    
+}
+
+.horizontal_list li a{
+    color: rgb(241, 238, 233);
+    padding: 20px 0;
+    margin:0px 10px;
+    text-decoration: none;
+    transition: color 1s,text-decoration 5s; /*for tajing time to show effect*/
+}
+
+.horizontal_list li a:hover{
+    color: coral;
+    text-decoration: underline;
+
+}
+div.fixed {
+    position: sticky;
+    position: -webkit-sticky;
+}
+/*name*/
+#name {
+    color:white;
+    margin-top: 4vh;
+    text-shadow: 0px 0px 8px rgb(235, 9, 9);
+    color: rgb(248, 242, 242);
+    transition: color 1s;
+}
+
+#name:hover {
+    color: rgb(13, 240, 153);
+}
+
+/*social icons*/
+.social_icon li a i {
+    font-size: 2rem;
+    padding: 5px;
+}
+
+.social_icon li a i:hover{
+    color: cornsilk;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 4px rgb(47, 26, 231);
+    
+}
+/*section*/
+section {
+    width:100%;
+    height: auto;
+   /* min-height:70vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-child(2n) {
+    background-color: rgb(235, 229, 229);
+}
+
+section:nth-child(2n+1) {
+    background-color: white;
+}
+/*use pseudo class*/
+section:target {
+    background: linear-gradient(rgb(218, 184, 184),rgb(167, 167, 199));
+}
+
+/*about */
+#about {
+   height: auto;
+   position: relative;
+   
+}
+
+#about #imag {
+     height: auto;
+     width: 13vw;
+     margin: auto;
+     margin-top: -9%;
+}
+
+#about #imag img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid rgb(243, 241, 236);
+    box-shadow: 0 0 10px 4px black;
+}
+ 
+#about p {
+    color: grey;
+    margin: 5% 20%;
+}
+#sname {
+    
+    margin-top: 5%;
+    text-shadow: 3px 3px 5px rgb(235, 9, 9);
+    color: rgb(248, 242, 242);
+    text-align: center;
+}
+
+#sname h1 {
+    color:rgba(7, 7, 7, 0.897);
+}
+
+#about .text_highlight {
+    color: rgb(233, 23, 23);
+    font-weight: 800;
+}
+
+/*skills*/
+
+#skills {
+    height: auto;
+}
+.section_heading span{
+    font-size: 2rem;
+    color: rgb(17, 17, 228);
+}
+
+.skill_display {
+    display: flex;
+    width: 70%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    border 2px solid black;
+    margin-bottom: 10%;
+
+}
+
+.mb75px {
+    margin-bottom: 3%;
+}
+
+.skill_progress {
+    /*border: 1px solid grey;*/
+    background-color: rgb(187, 180, 180);
+    
+    width: 15%;
+    border-radius: 0.8rem;
+    color: white;
+    margin: 2%;
+    box-shadow: 0 0 4px black;
+    overflow-x: hidden;
+}
+
+
+
+ #skill_percent1 {
+    width: 85%;
+    height: 100%;
+    background-color: blue;
+    box-sizing: border-box;
+    border-radius: 0.8rem 0 0 0.8rem;
+    padding: 2%;
+    margin: 0;
+    box-shadow: 0 0 4px black;
+}
+
+.skill_progress span {
+    width: inherit;
+    padding-left: 25%;
+    font-size: 1.5rem;
+}
+
+
+
+#skill_percent2 {
+    width: 85%;
+    height: 100%;
+    background-color: rgb(150, 218, 186);
+    box-sizing: border-box;
+    border-radius: 0.8rem 0 0 0.8rem;
+    padding: 2%;
+    box-shadow: 0 0 4px black;
+}
+
+#skill_percent3 {
+    width: 75%;
+    height: 100%;
+    background-color: rgb(224, 55, 202);
+    box-sizing: border-box;
+    border-radius:  0.8rem 0 0 0.8rem;
+    padding: 2%;
+    box-shadow: 0 0 4px black;
+}
+
+#skill_percent4 {
+    width: 90%;
+    height: 100%;
+    background-color: rgb(230, 18, 64);
+    box-sizing: border-box;
+    border-radius:  0.8rem 0 0 0.8rem;
+    padding: 2%;
+    box-shadow: 0 0 4px black;
+}
+
+#skill_percent5 {
+    width: 80%;
+    height: 100%;
+    background-color: rgb(86, 218, 86);
+    box-sizing: border-box;
+    border-radius:  0.8rem 0 0 0.8rem;
+    padding: 2%;
+    box-shadow: 0 0 4px black;
+}
+
+#skill_percent6 {
+    width: 85%;
+    height: 100%;
+    background-color: rgb(194, 194, 91);
+    box-sizing: border-box;
+    border-radius:  0.8rem 0 0 0.8rem;
+    padding: 2%;
+    box-shadow: 0 0 4px black;
+}
+
+#skill_percent7 {
+    width: 75%;
+    height: 100%;
+    background-color: rgb(57, 163, 212);
+    box-sizing: border-box;
+    border-radius:  0.8rem 0 0 0.8rem;
+    padding: 2%;
+    box-shadow: 0 0 4px black;
+}
+
+/*experince education common*/
+.heading {
+    margin: 5%;
+    font-size: 2rem;
+    font-weight: 800;
+   /* color: rgb(17, 17, 228);*/
+}
+
+.container {
+    position: relative;
+    width: 75%;
+    margin: auto;
+    height: auto;
+    min-height: 10vh;
+    margin-bottom: 5%;
+    border: 1px solid black;
+    
+  /*  background-image: linear-gradient(orange,white,green);
+*/
+}
+
+.container_item {
+    position: relative;
+    width: 40%;
+   /* height: 80%;  it doesn't work as height of parent is not specified*/
+    height: auto;
+    min-height: 30vh;
+   
+    margin: 2%;
+    border: 1px solid black;
+    text-align: justify;
+   
+  /*  background-image: linear-gradient(rgb(51, 177, 135),rgb(111, 111, 189));
+*/
+}
+
+.container_item:nth-child(2n){
+    margin-left: 57%;
+}
+
+.traveller {
+    position: absolute;
+    top: 2%;/*necessary to set for absolute pos in work*/
+    left: 50%;/*necesaary to set*/
+    height: 95%;
+    width: 0vw;
+    border: 1px solid black;
+    background-color: black;
+}
+
+.aero {
+    position: sticky;
+    transform: rotate(90deg);
+    top: 15%; /*necessary to set for sticky value in working*/
+    z-index: 1;
+    color: mediumblue;
+}
+
+/* .dot {
+    position: absolute;
+    top: 2%;
+    left: 49.3%;
+    height: 10px;
+    width: 10px;
+    background-color: orangered;
+    border-radius: 50%;
+    z-index: 1;
+} */
+
+/*use os pseudo elements and pseudo class both*/
+.container_item:nth-child(2n+1)::after {
+    content: ''; /*necessary*/
+    position: absolute;
+    top: 2%;
+    left: 117%;
+    height: 10px;
+    width: 10px;
+    background-color: orangered;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+ /*use of pseudo elments and pseudo class both*/
+.container_item:nth-child(2n)::after {
+    content: '';
+    position: absolute;
+    top: 2%;
+    right: 34.2vw;
+    height: 10px;
+    width: 10px;
+    background-color: orangered;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/*.container_item:nth-child(2n+1) .dot {
+    position: absolute;
+    top: 2%;
+    left: 34.2vw;
+    color: red;
+    z-index: 1;
+}*/
+
+.logo {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    color: orange;
+    font-size: 2rem;
+}
+
+.logo_name {
+    position: absolute;
+    right: 4%;
+    top: 10%;
+    font-size: 1rem;
+    color: ;
+}
+
+.text {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    overflow: auto;
+}
+/*experience*/
+#experince {
+    height: auto;
+}
+
+
+
+/*education*/
+
+#education {
+    height: auto;
+}
+
+
+/*contacts*/
+#contacts {
+    background: linear-gradient(#2857a4,#403066);
+    color: white;
+    height: auto;
+}
+
+#contacts #conts {
+      font-size: 2rem;
+}
+
+#contacts #container {
+    display: flex;
+    height: auto;
+    width: 100%;
+
+}
+
+#contacts #container .item {
+    width: 40%;
+    margin: 3% 15% 3% 15%;
+}
+
+#contacts #container .item input {
+     border-style: hidden;
+     background-color #2857a4;
+}
+
+#contacts #container span {
+    margin-left: 2%;
+}

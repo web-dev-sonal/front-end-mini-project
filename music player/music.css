@@ -1,0 +1,401 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(6, 11, 41, 0.986);
+    color: white;
+    margin: 1em 2em;
+    
+}
+
+/*....header....*/
+.header {
+
+}
+
+[class*="col-"] {
+    float: left;
+    margin-right: 1em;
+}
+
+.col-1 {
+    /* background-image: url("https://images.unsplash.com/photo-1525362081669-2b476bb628c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"); */
+    /* height: 5em;
+    width: 5em; */
+    /* max-height: 50%;
+    max-width: 50%; */
+    /* background-repeat: no-repeat;
+    background-attachment: fixed; */
+    /* background-size: contain; */
+    /* border: 1px solid rgba(6, 11, 41, 0.986); */
+    /* border-radius: 50%; */
+    /* height: 100%;
+    width: 100%; */
+}
+
+.rounded_img {
+    border-radius: 50%;
+}
+
+.col-4 {
+    /* background-image: url("./profile.jpeg"); */
+    /* background-color: white;
+    height: 5em;
+    width: 5em;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain; */
+}
+.row::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+.col-5 .dot::after{
+    content: '';
+    display: inline-block;
+    width: 0.5em;
+    height: 0.5em;
+    background-color: red;
+    border-radius: 50%;
+    margin-right: 1em;
+}
+
+/* .dot {
+    display: inline-block;
+    margin: 0 1em 1em 0;
+} */
+
+.col-6 {
+    margin-top: 1.8em;
+    background-color: rgb(23, 43, 87);
+    width: 13em;
+    height: 1.6em;
+    padding: 0.2em 0.5em;
+    border-radius: 0.4em;
+}
+
+.col-6 input {
+    background-color: rgb(23, 43, 87);
+    border: none;
+    /* padding: 0.3em;
+    margin: 2em 2em 0 0; */
+}
+
+input[type=search]:focus {
+     border: none;
+}
+
+/*....container....*/
+.container {
+    margin: 1em 1em;
+    
+}
+
+/*....main....*/
+.main {
+    margin: 0 1em;
+    width: 60%;
+    height: 80%;
+     /* border: 1px solid red;   */
+    /* delete at last */
+}
+
+.common_display {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 2em 0;
+    width: 100%;
+    
+    height: 100%;
+    /* align-items: center;
+    justify-content: center; */
+    /* border: 1px solid red; delete at last */
+}
+
+.poster {
+    background-image: url(https://cdn.pixabay.com/photo/2013/11/03/08/05/cheers-204742_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30em;
+    width: 55em;
+    /* opacity: ;
+    border-radius: 2%; */
+}
+
+.poster {
+    align-items: center;
+    justify-content: center;
+    font-family: 'Chewy', cursive;
+    letter-spacing: 0.2em;
+    /* font-size: 1.2em; */
+    color: rgb(22, 5, 3);
+}
+
+.poster:hover {
+     box-shadow: 0 0 20px rgb(73, 184, 45);
+     transform: scale(1.05);
+    margin-bottom: 1.1em;
+    transition: transform 1s,margin-bottom 1s;
+}
+
+.text {
+    background-image: radial-gradient(rgb(221, 54, 48),blue,rgb(9, 241, 28),rgb(201, 35, 179),green);
+    padding: 1em;
+    border-radius: 50%;
+}
+
+@keyframes text_design {
+    from {
+        transform: scale(1); 
+        /* transform: rotateY(0); */
+    }
+    to {
+        transform: scale(1.5);
+        /* transform: rotateY(360deg); */
+    }
+}
+
+.text:hover {
+    padding: 2em;
+    box-shadow: 0 0 10px red;
+    
+    transform: scale(1);
+    transition-timing-function: linear;
+    /* transition: padding 1s,box-shadow 1s,transform 4s; */
+    /*....add animation....*/
+    
+    animation-name: text_design;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: 2s;
+}
+
+.latest_release .item {
+    width: 50%;
+    margin-bottom: 1em;
+}
+
+.latest_release .item img:hover {
+    box-shadow: 0 0 15px grey;
+    transform: scale(1.1);
+    margin: 1.5em;
+    transition: transform 1s,margin 1s;
+}
+
+[class*=latest_release_col-] {
+    float: left;
+
+}
+
+.btn {
+    background-color: rgba(6, 11, 41, 0.986);
+    border: none;
+    color: silver;
+}
+
+/*...popular artist...*/
+
+[class*=pic-] {
+    /* height: 5em;
+    width: 5em; */
+    margin: 1em;
+}
+
+[class*=pic-] img:hover {
+    box-shadow: 0 0 15px grey;
+    transform: scale(1.5);
+    margin-bottom: 1.1em;
+    transition: transform 1s,margin-bottom 1s;
+    
+}
+
+
+/*....station....*/
+.station {
+     padding: 2em;
+     background-color: rgb(18, 8, 83);
+     width: 100%;
+     height: auto;
+}
+[class*=sta-]{
+    padding: 1em 1em;
+    margin: 0 1em;
+    height: 5em;
+    width: 5em;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+[class*=sta-] p {
+    margin-top: 1em;
+    color: rgb(197, 202, 206);
+    text-align: center;
+}
+
+.sta-1 {
+    /* height: 5em;
+    width: 10em;
+    background-color: yellow;
+    height: 6em;
+    width: 6em;
+    background-color: rgb(180, 180, 61);  they are not working*/
+    height: 6em;
+    width: 6em;
+    background-color: red;
+}
+
+.sta-2 {
+    background-image: url(https://images.unsplash.com/photo-1518568740560-333139a27e72?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+    /* height: 5em;
+    width: 5em;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+.sta-3 {
+    background-image: url(https://images.unsplash.com/photo-1487180144351-b8472da7d491?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+}
+
+.sta-4 {
+    background-image: url(https://images.unsplash.com/photo-1534276866337-55723bdee569?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+
+}
+.sta-5 {
+    background-image: url(https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+
+}
+.sta-6 {
+    background-image: url(https://images.unsplash.com/photo-1508973379184-7517410fb0bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+
+}
+.sta-7 {
+    background-image: url(https://images.unsplash.com/photo-1521337581100-8ca9a73a5f79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+}
+
+[class*=sta-]:hover {
+    box-shadow: 0 0 15px grey;
+    transform: scale(1.5);
+    margin-bottom: 1.1em;
+    transition: transform 1s,margin-bottom 1s;
+}
+
+/*....situation....*/
+[class*=sit-] {
+    margin: 0 1em;
+    height: 15em;
+    width: 16em;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+[class*=sit-] p{
+    margin-top: 7em;
+    color: rgb(197, 202, 206);
+    text-align: center;
+}
+.sit-1 {
+     background-image: url(https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+
+}
+.sit-2 {
+    background-image: url(https://images.unsplash.com/photo-1547669270-e1a9dcd106b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+
+}
+.sit-3 {
+    background-image: url(https://images.unsplash.com/photo-1468818438311-4bab781ab9b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+
+}
+
+[class*=sit-]:hover {
+    box-shadow: 0 0 15px grey;
+    transform: scale(1.5);
+    margin-bottom: 1.1em;
+    transition: transform 1s,margin-bottom 1s;
+}
+
+/*....latest ....*/
+[class*=latest-] {
+    margin: 0 1em;
+}
+
+[class*=latest-] img{
+    height: 7em;
+    width: 7em;
+}
+
+[class*=latest-] p {
+    font-size: 0.7em;
+}
+
+[class*=latest-]:hover {
+    box-shadow: 0 0 15px grey;
+    transform: scale(1.5);
+    margin-bottom: 1.1em;
+    transition: transform 1s,margin-bottom 1s;
+}
+/* .latest_hindi [class*=latest-] p{
+    font-size: 0.7em;
+} */
+
+.side {
+    margin: 0 1em;
+    width: 28%;
+    height: auto;
+    padding: 1em;
+    margin-left: 5em;
+    /* border: 1px solid red;   */
+}
+
+.side .side_header::after{
+      content: '';
+      clear: both;
+      display: table;
+}
+
+.side img {
+    vertical-align: middle;
+    margin: 0 2em;
+}
+
+.side ol li {
+    margin: 1em 0;
+}
+
+.side ol li .heart {
+    float: right;
+    margin-top: 0.5em;
+    /* background-color: red; */
+}
+
+.side ol p{
+    /* display: inline-block; */
+}
+
+.side img:hover {
+    box-shadow: 0 0 15px grey;
+}
+
+/*....timeline....*/
+
+.timeline {
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    width: 100%; 
+    height: 50px;
+    background-color: rgb(54, 53, 53);
+}
+
+.timeline .left {
+    float: left;
+}
+
+.playing_timeline {
+    margin: 0 auto;
+}
